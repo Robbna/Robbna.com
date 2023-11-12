@@ -1,0 +1,23 @@
+{
+  "robb": {
+    "about": "Ich bin ein Softwareentwickler mit Erfahrung in der Entwicklung von Webanwendungen und Videospielen. Ich liebe es, neue Technologien zu lernen und im Team zu arbeiten.",
+    "footer": "Hergestellt mit 🖤 von Robb",
+    "description": "Full-Stack- und Spieleentwickler"
+  },
+  "socials": {
+    "github": "GitHub",
+    "linkedin": "LinkedIn",
+    "email": "E-Mail"
+  },
+  "projects": {
+    "robbna-website": {
+      "description": "Meine persönliche Website"
+    },
+    "robbna-website-api": {
+      "description": "API für meine persönliche Website"
+    },
+    "muggle-api": {
+      "description": "Eine auf JSON basierende API mit Daten aus dem Harry-Potter-Universum."
+    }
+  }
+}

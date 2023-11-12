@@ -1,0 +1,67 @@
+.projectItem {
+  --item-size: 100%;
+  --item-gradient-height: 200px;
+
+  position: relative;
+  overflow: hidden;
+
+  display: flex;
+  flex-direction: column;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border-radius: 6px;
+}
+
+.projectContent {
+  position: absolute;
+  z-index: 10;
+  bottom: 0;
+  box-sizing: border-box;
+
+  height: var(--item-gradient-height);
+  width: 100%;
+
+  color: var(--color-white);
+  background: linear-gradient(to top, var(--color-dark) 0%, transparent 100%);
+}
+.projectInfo {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  box-sizing: border-box;
+
+  padding: 9px;
+  height: 100%;
+}
+
+.title {
+  font-size: clamp(1rem, 100vw, 2rem);
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.description {
+  font-size: 1rem;
+  font-weight: 400;
+  margin-bottom: 5px;
+}
+
+.image {
+  filter: blur(1px);
+  width: var(--item-size);
+  height: var(--item-size);
+  aspect-ratio: 1/1;
+
+  position: relative;
+  object-fit: cover;
+  z-index: 1;
+}
+
+@media screen and (width > 1024px) {
+  .projectItem {
+    --item-size: 100%;
+    transition: transform 0.2s ease-in-out;
+  }
+  .projectItem:hover {
+    transform: scale(1.03);
+  }
+}

@@ -1,0 +1,36 @@
+.mainWrapper {
+  display: flex;
+  position: relative;
+  background-color: var(--color-main);
+}
+
+.contentWrapper {
+  width: 100%;
+}
+
+.footerWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 10px;
+}
+
+.footerLabel {
+  background-color: var(--color-footer);
+  color: var(--color-main-dark);
+  font-size: 0.8rem;
+}
+
+.footerCopyright {
+  background-color: var(--color-footer);
+  color: var(--color-main-dark);
+  opacity: 0.3;
+  font-size: 0.8rem;
+}
+
+@media screen and (width > 1024px) {
+  .contentWrapper {
+    border-right: 1px solid var(--color-main-dark);
+  }
+}

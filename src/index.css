@@ -1,0 +1,62 @@
+:root {
+  --color-main: rgb(240, 240, 240);
+  --color-main-opacity: rgba(240, 240, 240, 0.06);
+  --color-main-dark: rgb(30, 30, 30);
+  --color-secondary: rgb(200, 200, 200);
+  --color-text: rgb(50, 50, 50);
+  --color-text-secondary: rgb(100, 100, 100);
+  --color-accent: rgb(130, 130, 130);
+
+  --color-gold: rgb(161, 133, 103);
+  --color-gold-opacity: rgba(161, 133, 103, 0.6);
+  --color-dark: rgb(30, 30, 30);
+  --color-white: rgb(240, 240, 240);
+  --color-error: rgb(236, 0, 0);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body * {
+  transition: background-color 0.7s ease;
+}
+
+.dark {
+  --color-main: rgb(30, 30, 30);
+  --color-main-opacity: rgb(30, 30, 30, 0.3);
+  --color-main-dark: rgb(240, 240, 240);
+  --color-secondary: rgb(40, 40, 40);
+  --color-text: rgb(220, 220, 220);
+  --color-text-secondary: rgb(170, 170, 170);
+  --color-accent: rgb(131, 131, 131);
+}
+* {
+  margin: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans",
+    "Helvetica Neue", sans-serif;
+}
+
+*::selection {
+  background-color: var(--color-gold-opacity);
+  color: var(--color-dark);
+}
+
+::-webkit-scrollbar {
+  width: 9px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: var(--color-main);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--color-main-dark);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}

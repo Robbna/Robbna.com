@@ -1,0 +1,13 @@
+.projectList {
+  display: grid;
+  grid-template-columns: repeat(1, 100%);
+  justify-content: center;
+  padding: 3rem;
+  gap: 3rem;
+}
+
+@media screen and (width > 1024px) {
+  .projectList {
+    grid-template-columns: repeat(2, clamp(30px, 50%, 500px));
+  }
+}
