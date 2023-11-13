@@ -58,7 +58,6 @@
 .image {
   width: 100%;
   object-fit: cover;
-  object-position: -700px;
 }
 
 .picture {
