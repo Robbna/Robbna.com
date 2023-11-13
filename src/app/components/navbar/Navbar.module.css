@@ -43,9 +43,10 @@
 
   .navbarWrapper {
     transform: translate(0, 0) !important;
-    border-left: 1px solid var(--color-main-dark);
     border-right: 1px solid var(--color-main-dark);
-    width: 400px;
+    min-width: 200px;
+    width: 30vw;
+    max-width: 300px;
     position: sticky;
     top: 0;
     left: 0;

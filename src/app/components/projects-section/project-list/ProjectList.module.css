@@ -1,6 +1,6 @@
 .projectList {
   display: grid;
-  grid-template-columns: repeat(1, 100%);
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 15rem), 1fr));
   justify-content: center;
   padding: 3rem;
   gap: 3rem;
@@ -8,6 +8,6 @@
 
 @media screen and (width > 1024px) {
   .projectList {
-    grid-template-columns: repeat(2, clamp(30px, 50%, 500px));
+    grid-template-columns: repeat(auto-fill, minmax(min(30%, 25rem), 1fr));
   }
 }
